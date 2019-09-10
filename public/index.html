@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wechat-false</title>
+	<link rel="stylesheet" href="lib/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="src/css/jquery.emoji.css"/>
+	<link rel="stylesheet" href="css/css.css"/>
+</head>
+<body>
+	<div class="login_box" style="display: block;">
+		<h3>用户登录</h3>
+		<p>用户名</p>
+		<input type="text" id="userName" placeholder="请输入昵称">
+		<p>选择图像</p>
+		<ul id="login_avatar" class="avatar">
+			<li><img src="imgs/1.jpg"/></li>
+			<li class="now"><img src="imgs/nv.jpg"/></li>
+			<li><img src="imgs/avatar.jpg"></li>
+			<li><img src="imgs/avatar02.jpg"/></li>
+			<li><img src="imgs/avatar03.jpg"/></li>
+			<li><img src="imgs/avatar04.jpg"/></li>
+			<li><img src="imgs/avatar05.jpg"/></li>
+			<li><img src="imgs/avatar06.jpg"/></li>
+			<li><img src="imgs/avatar07.jpg"/></li>
+			<li><img src="imgs/avatar08.jpg"/></li>
+			<li><img src="imgs/avatar09.jpg"/></li>
+			<li><img src="imgs/avatar10.jpg"/></li>
+			<li><img src="imgs/2.jpg"/></li>
+			<li><img src="imgs/3.jpg"/></li>
+			<li><img src="imgs/4.jpg"/></li>
+			<li><img src="imgs/5.jpg"/></li>
+		</ul>
+		<button class="weui-btn" id="loginBtn">登录</button>
+	</div>
+	<div class="container" style="display: none;">
+		<!-- 用户list -->
+		<div class="user-list">
+			<div class="header">
+				<div class="avatar">
+					<img class="img myImg" src="imgs/nv.jpg"></img>
+				</div>
+				<div class="info">
+					<h3 class="username myName">yuh</h3>
+				</div>
+			</div>
+			<div class="title">
+				<h3>User list</h3>
+			</div>
+			<ul></ul>
+		</div>
+		<!-- 聊天主场看 -->
+		<div class="box">
+    		<div class="box-hd"><h3>聊天室(<span id="userCount">99</span>)</h3></div>
+			<div class="box-bd"></div>
+			<!-- 聊天窗口底部区域 -->
+			<div class="box-ft">
+				<!-- 工具栏 -->
+				<div class="toolbar">
+					<a class="face" title="表情" href="javascript:;"></a>
+					<a class="screen-cut" title="截屏" href="javascript:;"></a>
+					<a class="file" title="图片" href="javascript:;">
+						<label for="file"></label>
+						<input type="file" id="file" style="display: none;">
+					</a>
+				</div>
+				<!-- 内容输入区域 -->
+				<div class="content">
+           			<!-- div添加一个属性：contenteditable -->
+					<!-- <textarea class="text" id="content" contenteditable=""></textarea> -->
+					<div class="text" id="content" contenteditable></div>
+				</div>
+				<!-- 发送按钮 -->
+				<div class="action">
+					<span class="desc">按下Ctrl+Enter发送</span>
+					<a class="btn-send" id="btn-send" href="javascript:;">发送</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+	<script src="lib/script/jquery.mousewheel-3.0.6.min.js"></script>
+	<script src="lib/script/jquery.mCustomScrollbar.min.js"></script>
+	<script src="src/js/jquery.emoji.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>
