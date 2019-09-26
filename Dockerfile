@@ -4,4 +4,4 @@ WORKDIR /app
 RUN npm install
 
 EXPOSE 8011
-CMD ["npm", "dev"]
+CMD ["node", "app.js"]
